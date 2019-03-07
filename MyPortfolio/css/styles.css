@@ -1,0 +1,15 @@
+body {
+
+    /* color: red;
+    color: rgb(0, 255, 0);
+    color: #0000ff;
+    color: #00f;  */
+    color: #333;
+    font-family: Verdana, sans-serif;
+}
+header {
+        background-color: pink;
+}
+/*「h1」のように、「どこに」を示すのが「セレクター」、「color: red;」のように、「どのようなスタイルを」を示すのがプロパティと呼ぶ*/
+/*色の指定は、一番↓の行のものが反映される*/
+/* 行を複数選択し、「Ctrl+/」すると、選択した行全てがコメントアウトされる */
