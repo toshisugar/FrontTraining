@@ -44,6 +44,10 @@ header li > a:hover { /*header li > a で、「ヘッダー内のli内のaのみ
     color: royalblue;
 }
 
+.current {
+    border-bottom: 4px solid royalblue;
+}
+
 section {
     text-align: center;
 }
@@ -108,6 +112,15 @@ footer p {
     color: lightgray;
     font-size: 14px;
     text-align: right;
+}
+
+.about {
+    width: 400px;
+    margin: 0 auto 60px;
+}
+
+.about p {
+    text-align: left;
 }
 
 
