@@ -71,11 +71,17 @@ section p {
 
 .works {
     width: 400px;/* 画像と同じ幅 */
+    margin: 60px auto;
+    /* 左右のmarginをautoつまり中央配置にする */
 }
-
 
 .works h1,p {
     text-align: left;
+}
+
+.works > section {/* これが意図しているのはworks(div要素)「「直下の」」section。つまり1つ。その中身は関係ない。 */
+    margin-bottom: 40px;
+    border-bottom: 1px solid gray;
 }
 
 
