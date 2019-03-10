@@ -3,13 +3,67 @@ body {
     /* color: red;
     color: rgb(0, 255, 0);
     color: #0000ff;
-    color: #00f;  */
+    color: #00f;  
+    色は、最後に指定したものが適応される
+    */
     color: #333;
     font-family: Verdana, sans-serif;
+    /*fontは、最初に指定したものに。それがなければ、そのあとのものに*/
+    margin: 0;
+    /*marginのみで、4方向の指定ができる。０の場合、「px」は省略できる*/
 }
+
 header {
-        background-color: pink;
+        text-align: right;/* テキストの位置 */
+        padding: 10px;
+        background-image: url(../img/header.png);
+        height: 240px;
+        background-size: cover;
+        background-position: 50% 50%;
+        margin-bottom: 60px;
 }
+
+header ul {
+    margin: 0;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+header li {
+    display: inline-block;/* 横並びにする */
+    padding: 4px 8px;/* 上下、及び左右をゆったりと持たせる */
+    font-size: 12px;
+}
+
+header li > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header li > a:hover { /*header li > a で、「ヘッダー内のli内のaのみに適当」となる */
+    color: royalblue;
+}
+
+section {
+    text-align: center;
+}
+
+section h1 {
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+section p {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.icon {
+    border-radius: 50%;
+}
+
+
 /*「h1」のように、「どこに」を示すのが「セレクター」、「color: red;」のように、「どのようなスタイルを」を示すのがプロパティと呼ぶ*/
 /*色の指定は、一番↓の行のものが反映される*/
 /* 行を複数選択し、「Ctrl+/」すると、選択した行全てがコメントアウトされる */
+/* 上下の位置関係にある要素に関しては、merginの相殺が起こり、幅の広いmerginにサイズが合わせられる */
