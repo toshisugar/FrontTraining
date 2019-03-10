@@ -93,6 +93,7 @@ footer ul {
     margin:0;
     list-style-type: none;
     padding-left: 0;
+    float: left;/*floatにより、この要素が浮いいた状態＝下にある要素がこの要素の場所まで食い込める設定ができる*/
 }
 
 footer li {
@@ -103,6 +104,11 @@ footer li > a:hover {
     opacity: 0.6;/*hoverした際に透明にする。これで60%の透明度になる。*/
 }
 
+footer p {
+    color: lightgray;
+    font-size: 14px;
+    text-align: right;
+}
 
 
 /*「h1」のように、「どこに」を示すのが「セレクター」、「color: red;」のように、「どのようなスタイルを」を示すのがプロパティと呼ぶ*/
