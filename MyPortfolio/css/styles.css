@@ -60,6 +60,12 @@ section p {
 
 .icon {
     border-radius: 50%;
+    /* border-color: pink;
+    border-width: 5px;
+    border-style: solid; */
+    border: 5px solid white;/* 上の3要素をまとめて設定できる */
+    /* box-shadow: x方向のズレ y方向のズレ blurぼかし幅 color色 */
+    box-shadow: 0px 0px 5px gray;
 }
 
 
