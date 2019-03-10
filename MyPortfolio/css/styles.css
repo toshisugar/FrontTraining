@@ -66,6 +66,16 @@ section p {
     border: 5px solid white;/* 上の3要素をまとめて設定できる */
     /* box-shadow: x方向のズレ y方向のズレ blurぼかし幅 color色 */
     box-shadow: 0px 0px 5px gray;
+    /* 結局ここでは、画像の周りに白いラインがあり、その周囲に影を設定している */
+}
+
+.works {
+    width: 400px;/* 画像と同じ幅 */
+}
+
+
+.works h1,p {
+    text-align: left;
 }
 
 
@@ -73,3 +83,4 @@ section p {
 /*色の指定は、一番↓の行のものが反映される*/
 /* 行を複数選択し、「Ctrl+/」すると、選択した行全てがコメントアウトされる */
 /* 上下の位置関係にある要素に関しては、merginの相殺が起こり、幅の広いmerginにサイズが合わせられる */
+/* sectionでtext-align: center;が設定されていても、divの中のsectionに適応されるだけなので、div自体をcenterにしないといけない */
