@@ -84,6 +84,26 @@ section p {
     border-bottom: 1px solid gray;
 }
 
+footer {
+    width: 400px;
+    margin: 0 auto 60px;/* 最後に指定したらbottomになる。よって、top、left&right、bottomの順で指定していることになる */
+}
+
+footer ul {
+    margin:0;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer li {
+    display: inline-block;
+}
+
+footer li > a:hover {
+    opacity: 0.6;/*hoverした際に透明にする。これで60%の透明度になる。*/
+}
+
+
 
 /*「h1」のように、「どこに」を示すのが「セレクター」、「color: red;」のように、「どのようなスタイルを」を示すのがプロパティと呼ぶ*/
 /*色の指定は、一番↓の行のものが反映される*/
